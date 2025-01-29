@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:ui": "npm run dev --workspace=ui",
+    "dev:bff": "npm run dev --workspace=bff",
+    "dev": "npm run dev --workspace=ui & npm run dev --workspace=bff"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,10 @@
   "workspaces": [
     "package/ui",
     "package/bff"
-  ]
+  ],
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-packagejson": "^2.5.8"
+  }
 }

@@ -1,0 +1,34 @@
+{
+  "singleQuote": true,
+  "printWidth": 90,
+  "editor.formatOnSave": true,
+  "proseWrap": "preserve",
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "semi": true,
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "<TYPES>",
+    "<TYPES>^[.]",
+    "",
+    "<BUILT_IN_MODULES>",
+    "",
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^(src|internals|@|#|~)(/.*)",
+    "",
+    "^[.]"
+  ],
+  "overrides": [
+    {
+      "files": ["*.yaml", "*.yml"],
+      "options": {
+        "singleQuote": false,
+        "bracketSpacing": false
+      }
+    }
+  ]
+}
